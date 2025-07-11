@@ -6,7 +6,7 @@ import Button from "../components/Button";
 import Title from "../components/Title";
 import { useNavigate } from "react-router-dom";
 
-const Info = () => {
+const Info = ({ sendIngredinetList }) => {
   // logic
   const history = useNavigate();
   // TODO: set함수 추가하기
@@ -25,6 +25,10 @@ const Info = () => {
   };
 
   const handleNext = () => {
+    // const reepons = await fetch("http://localhost:8080/test");
+    // const rseult = await reepons.json();
+    sendIngredinetList(ingredientList);
+
     // APP에 적은걸로 맞춰서 찾음.
     history("/Chat");
   };
