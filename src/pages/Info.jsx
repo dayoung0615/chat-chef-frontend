@@ -1,3 +1,5 @@
+//yarn start
+//yarn add serverless-http < 배포 올리는 용도
 import React, { useState } from "react";
 import PrevButton from "../components/PrevButton";
 import InfoInput from "../components/InfoInput";
